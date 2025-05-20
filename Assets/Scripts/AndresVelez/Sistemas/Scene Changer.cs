@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks; // ← Necesario para Task
 
 public class SceneChanger : MonoBehaviour
 {
@@ -11,18 +12,23 @@ public class SceneChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            EnviarDatosYCambiarEscena();
+            _ = EnviarDatosYCambiarEscenaAsync(); // Usamos async correctamente
         }
     }
 
     public void changeScene()
     {
-        EnviarDatosYCambiarEscena();
+        _ = EnviarDatosYCambiarEscenaAsync(); // También aquí
     }
 
-    private void EnviarDatosYCambiarEscena()
+    // 🔹 Método async para guardar datos y luego cambiar de escena
+    private async Task EnviarDatosYCambiarEscenaAsync()
     {
+        ScoreManager.Instance.currentScore = TakePhotos.totalScore;
+        ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
 
-        SceneManager.LoadScene(sceneName);
+        await ScoreManager.Instance.SaveAndLoadUpdatedHighScore(); // ← Usamos await aquí
+
+        SceneManager.LoadScene(sceneName); // ← Solo se ejecuta después de guardar
     }
 }
