@@ -7,6 +7,9 @@ using UnityEditor;
 
 public class TakePhotos : MonoBehaviour
 {
+    public GameObject floatingPointsPrefab; 
+
+    private int pointsPerPhoto;
     private static int nextID = 1;
     public Image fondoJugador; // Asigna esta en el Inspector o con GetComponent
 
@@ -109,16 +112,21 @@ public class TakePhotos : MonoBehaviour
     {
         canTakePhoto = false;
         photosRemaining--;
-        ActivarMira(MiraMala);        
-
+        ActivarMira(MiraMala);       
         Animal animal = DetectarAnimal();
+
         if (animal != null)
         {
+            pointsPerPhoto = animal.GetScore();
+            showFloatingPoints();   
             totalScore += animal.GetScore();
 
             if (!animal.fotografiado)
             {
                 animal.fotografiado = true;
+               
+                
+
                 if (animal.animalAudioSource != null)
                 {
                     animal.animalAudioSource.Play();
@@ -160,7 +168,20 @@ public class TakePhotos : MonoBehaviour
             canTakePhoto = true;
         }
     }
-
+    void showFloatingPoints()
+    {
+        Animal animal = DetectarAnimal();
+        if (animal != null)
+        {
+            pointsPerPhoto = animal.GetScore();
+        }
+        else
+        {
+            pointsPerPhoto = 0;
+        }
+        var go= Instantiate(floatingPointsPrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMeshProUGUI>().text = "+" + (pointsPerPhoto).ToString();
+    }
     IEnumerator RecargarFotos()
     {
         isReloading = true;
