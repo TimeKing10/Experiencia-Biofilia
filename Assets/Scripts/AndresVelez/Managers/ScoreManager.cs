@@ -4,6 +4,8 @@ using Unity.Services.Core;
 using Unity.Services.Authentication;
 using Unity.Services.CloudSave;
 using System.Threading.Tasks;
+using Unity.Services.Leaderboards;
+using System;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -114,4 +116,29 @@ public class ScoreManager : MonoBehaviour
     {
         return "HighScore_" + levelName.Replace(" ", "_");
     }
+    private readonly Dictionary<string, string> leaderboardIds = new Dictionary<string, string>
+    {
+        { "Nivel amazonas", "leaderboard_amazonas" }
+    };
+
+
+    public async void SubmitScoreToLeaderboard(string levelName, int score)
+    {
+        if (!leaderboardIds.TryGetValue(levelName, out string leaderboardId))
+        {
+            Debug.LogError($"No se encontró un leaderboardId para el nivel: {levelName}");
+            return;
+        }
+
+        try
+        {
+            var response = await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardId, score);
+            Debug.Log($"Puntaje enviado a leaderboard {leaderboardId}: {response.Score}");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Error al enviar puntaje al leaderboard: " + ex.Message);
+        }
+    }
+
 }

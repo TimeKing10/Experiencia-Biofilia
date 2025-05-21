@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.Services.Authentication;
@@ -39,6 +39,18 @@ public class LoginUIManager : MonoBehaviour
         {
             await AuthenticationService.Instance.SignInWithUsernamePasswordAsync(username, password);
             Debug.Log("SignIn is successful.");
+
+            // âœ… Solo actualizar si el nombre aÃºn no ha sido establecido
+            try
+            {
+                await AuthenticationService.Instance.UpdatePlayerNameAsync(username);
+                Debug.Log($"Nombre de jugador actualizado a: {username}");
+            }
+            catch (RequestFailedException e)
+            {
+                Debug.Log("El nombre ya estÃ¡ establecido o no se puede cambiar mÃ¡s: " + e.Message);
+            }
+
             ShowUsername();
             errorText.text = "";
 
@@ -47,7 +59,7 @@ public class LoginUIManager : MonoBehaviour
         catch (AuthenticationException ex)
         {
             Debug.LogException(ex);
-            errorText.text = "Error al iniciar sesión: " + ex.Message;
+            errorText.text = "Error al iniciar sesiÃ³n: " + ex.Message;
         }
         catch (RequestFailedException ex)
         {
@@ -56,6 +68,7 @@ public class LoginUIManager : MonoBehaviour
         }
     }
 
+
     public async void OnSignUpClicked()
     {
         string username = usernameInput.text;
@@ -63,8 +76,8 @@ public class LoginUIManager : MonoBehaviour
 
         if (!IsValidUsername(username) || !IsValidPassword(password))
         {
-            errorText.text = "El usuario debe tener 3-20 caracteres (letras, números, ., -, @, _).\n" +
-                             "La contraseña debe tener 8-30 caracteres, con mayúsculas, minúsculas, un número y un símbolo.";
+            errorText.text = "El usuario debe tener 3-20 caracteres (letras, nÃºmeros, ., -, @, _).\n" +
+                             "La contraseÃ±a debe tener 8-30 caracteres, con mayÃºsculas, minÃºsculas, un nÃºmero y un sÃ­mbolo.";
             return;
         }
 
@@ -72,6 +85,11 @@ public class LoginUIManager : MonoBehaviour
         {
             await AuthenticationService.Instance.SignUpWithUsernamePasswordAsync(username, password);
             Debug.Log("SignUp is successful.");
+
+            // âœ… Establecer nombre visible del jugador
+            await AuthenticationService.Instance.UpdatePlayerNameAsync(username);
+            Debug.Log($"Nombre de jugador actualizado a: {username}");
+
             ShowUsername();
             errorText.text = "";
 
@@ -88,6 +106,7 @@ public class LoginUIManager : MonoBehaviour
             errorText.text = "Error de red: " + ex.Message;
         }
     }
+
 
     void ShowUsername()
     {
