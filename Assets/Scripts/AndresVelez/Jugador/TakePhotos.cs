@@ -231,27 +231,35 @@ public class TakePhotos : MonoBehaviour
         fullScreenshot.Apply();
         uiCanvas.enabled = true;
 
-        Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(null, apuntador.position);
+        // Obtener las 4 esquinas del apuntador en mundo
+        Vector3[] worldCorners = new Vector3[4];
+        apuntador.GetWorldCorners(worldCorners);
 
-        int x = Mathf.Clamp((int)screenPos.x - (fotoSize / 2), 0, Screen.width);
-        int y = Mathf.Clamp((int)screenPos.y - (fotoSize / 2), 0, Screen.height);
+        // Convertir esas esquinas a coordenadas de pantalla
+        Vector2 screenBL = RectTransformUtility.WorldToScreenPoint(null, worldCorners[0]); // bottom-left
+        Vector2 screenTR = RectTransformUtility.WorldToScreenPoint(null, worldCorners[2]); // top-right
 
-        int safeWidth = Mathf.Min(fotoSize, Screen.width - x);
-        int safeHeight = Mathf.Min(fotoSize, Screen.height - y);
+        int width = Mathf.RoundToInt(screenTR.x - screenBL.x);
+        int height = Mathf.RoundToInt(screenTR.y - screenBL.y);
 
-        if (safeWidth <= 0 || safeHeight <= 0)
+        int x = Mathf.Clamp((int)screenBL.x, 0, Screen.width - width);
+        int y = Mathf.Clamp((int)screenBL.y, 0, Screen.height - height);
+
+        if (width <= 0 || height <= 0)
         {
             Destroy(fullScreenshot);
             yield break;
         }
 
-        Texture2D croppedScreenshot = new Texture2D(safeWidth, safeHeight);
-        croppedScreenshot.SetPixels(fullScreenshot.GetPixels(x, y, safeWidth, safeHeight));
+        Texture2D croppedScreenshot = new Texture2D(width, height);
+        croppedScreenshot.SetPixels(fullScreenshot.GetPixels(x, y, width, height));
         croppedScreenshot.Apply();
 
         Destroy(fullScreenshot);
         MostrarFotoEnUI(croppedScreenshot);
     }
+
+
 
     void MostrarFotoEnUI(Texture2D foto)
     {

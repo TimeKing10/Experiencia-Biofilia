@@ -14,11 +14,30 @@ public class MovimientoJugador : MonoBehaviour
     void Start()
     {
         canvasRectTransform = Referencias.Instance.canva;
-        transform.SetParent(canvasRectTransform);
+
+        // Establecer el canvas como padre y reiniciar transformaciones
+        transform.SetParent(canvasRectTransform, false); // <- importante: 'false' mantiene la escala/posición local
+
+        // Centrar este objeto (jugador) si es un RectTransform
+        if (transform is RectTransform jugadorRect)
+        {
+            jugadorRect.anchoredPosition = Vector2.zero;
+            jugadorRect.localRotation = Quaternion.identity;
+            jugadorRect.localScale = Vector3.one;
+        }
+
+        // Centrar también el apuntador
+        if (apuntador != null)
+        {
+            apuntador.anchoredPosition = Vector2.zero;
+        }
+
+        // Calcular los límites del canvas
         Vector2 canvasSize = canvasRectTransform.sizeDelta;
         canvasMin = -canvasSize / 2f;
         canvasMax = canvasSize / 2f;
     }
+
 
     private void Update()
     {

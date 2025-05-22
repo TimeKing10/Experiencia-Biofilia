@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -11,17 +12,27 @@ public class SceneChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            EnviarDatosYCambiarEscena();
+            EnviarDatosYCambiarEscena(); // ✅ Llamada directa
         }
     }
 
     public void changeScene()
     {
-        EnviarDatosYCambiarEscena();
+        EnviarDatosYCambiarEscena(); // ✅ Llamada directa
     }
 
-    private void EnviarDatosYCambiarEscena()
+    private async void EnviarDatosYCambiarEscena()
     {
+        ScoreManager.Instance.currentScore = TakePhotos.totalScore;
+        ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
+
+        await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
+        int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
+
+        ScoreManager.Instance.SubmitScoreToLeaderboard(
+            ScoreManager.Instance.currentLevel,
+            updatedHighScore
+        );
 
         SceneManager.LoadScene(sceneName);
     }
