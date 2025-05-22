@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
     public int currentScore = 0;
     public string currentLevel;
 
+    private readonly string[] allLevels = new string[] { "Nivel amazonas", "Nivel Tatacoa"};
     async void Awake()
     {
         if (Instance != null && Instance != this)
@@ -26,6 +27,19 @@ public class ScoreManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         await InitializeUnityServicesAsync();
+    }
+
+    public async Task<int> GetTotalHighScoreAllLevels()
+    {
+        int total = 0;
+
+        foreach (string nivel in allLevels)
+        {
+            int score = await LoadHighScore(nivel);
+            total += score;
+        }
+
+        return total;
     }
 
     private async Task InitializeUnityServicesAsync()
@@ -122,22 +136,20 @@ public class ScoreManager : MonoBehaviour
     };
 
 
-    public async void SubmitScoreToLeaderboard(string levelName, int score)
+    public async void SubmitTotalScoreToLeaderboard()
     {
-        if (!leaderboardIds.TryGetValue(levelName, out string leaderboardId))
-        {
-            Debug.LogError($"No se encontró un leaderboardId para el nivel: {levelName}");
-            return;
-        }
+        string leaderboardId = "leaderboard_amazonas";
 
         try
         {
-            var response = await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardId, score);
-            Debug.Log($"Puntaje enviado a leaderboard {leaderboardId}: {response.Score}");
+            int totalScore = await GetTotalHighScoreAllLevels();
+
+            var response = await LeaderboardsService.Instance.AddPlayerScoreAsync(leaderboardId, totalScore);
+            Debug.Log($"Puntaje total {totalScore} enviado a leaderboard {leaderboardId}: {response.Score}");
         }
         catch (Exception ex)
         {
-            Debug.LogError("Error al enviar puntaje al leaderboard: " + ex.Message);
+            Debug.LogError("Error al enviar puntaje total al leaderboard: " + ex.Message);
         }
     }
 

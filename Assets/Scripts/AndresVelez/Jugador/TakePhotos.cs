@@ -4,6 +4,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
 using UnityEditor;
+using System.Collections.Generic;
 
 public class TakePhotos : MonoBehaviour
 {
@@ -47,6 +48,8 @@ public class TakePhotos : MonoBehaviour
     private int photosRemaining;
     private bool canTakePhoto = true;
     private bool isReloading = false;
+
+    public static Dictionary<string, FotoAnimal> mejoresFotos = new Dictionary<string, FotoAnimal>();
 
     private void Awake()
     {
@@ -145,6 +148,8 @@ public class TakePhotos : MonoBehaviour
                 ActivarMira(MiraBuena);
                 AnalyticsManager.Instance?.EnviarEventoTipoFoto("buena");
             }
+
+            
         }
         else
         {
@@ -154,7 +159,7 @@ public class TakePhotos : MonoBehaviour
         }
 
         cameraSound?.Play();
-        yield return CaptureScreenshot();
+        yield return CaptureScreenshot(animal);
         UpdateUI();
 
         if (photosRemaining <= 0)
@@ -220,7 +225,7 @@ public class TakePhotos : MonoBehaviour
         scoreText.text = $"{totalScore}";
     }
 
-    IEnumerator CaptureScreenshot()
+    IEnumerator CaptureScreenshot(Animal animal)
     {
         yield return new WaitForEndOfFrame();
         uiCanvas.enabled = false;
@@ -256,8 +261,25 @@ public class TakePhotos : MonoBehaviour
         croppedScreenshot.Apply();
 
         Destroy(fullScreenshot);
+
+        if (animal != null)
+        {
+            FotoAnimal nuevaFoto = new FotoAnimal
+            {
+                nombreAnimal = animal.nombreAnimal,
+                foto = croppedScreenshot,
+                score = animal.GetScore()
+            };
+
+            if (!mejoresFotos.ContainsKey(animal.nombreAnimal) || nuevaFoto.score > mejoresFotos[animal.nombreAnimal].score)
+            {
+                mejoresFotos[animal.nombreAnimal] = nuevaFoto;
+            }
+        }
+
         MostrarFotoEnUI(croppedScreenshot);
     }
+
 
 
 
