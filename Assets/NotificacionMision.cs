@@ -4,33 +4,29 @@ using TMPro;
 
 public class NotificacionMision : MonoBehaviour
 {
-    public RectTransform panelTransform; // El contenedor del panel de notificación
-    public TextMeshProUGUI mensajeTexto; // El texto a mostrar
+    public RectTransform panelTransform;      // Contenedor de la notificación
+    public TextMeshProUGUI mensajeTexto;      // Texto de la notificación
 
-    private Vector2 posicionFuera; // posición inicial (fuera de pantalla)
-    private Vector2 posicionVisible; // posición destino visible
+    [Header("Posiciones de animación")]
+    public Vector2 posicionEntrada = new Vector2(-600f, 0f);  // Fuera de pantalla (izquierda)
+    public Vector2 posicionVisible = new Vector2(0f, 0f);     // En pantalla
 
-    void Awake()
+    private void Awake()
     {
-        // Guarda las posiciones de entrada y salida (fuera de pantalla = -600 px en X)
-        posicionVisible = panelTransform.anchoredPosition;
-        posicionFuera = new Vector2(-600f, posicionVisible.y);
-
-        panelTransform.anchoredPosition = posicionFuera;
-        gameObject.SetActive(true);
+        panelTransform.anchoredPosition = posicionEntrada;
+        gameObject.SetActive(false);
     }
 
     public void MostrarNotificacion(string mensaje)
     {
         mensajeTexto.text = mensaje;
         gameObject.SetActive(true);
-
-        panelTransform.anchoredPosition = posicionFuera;
+        panelTransform.anchoredPosition = posicionEntrada;
 
         Sequence seq = DOTween.Sequence();
-        seq.Append(panelTransform.DOAnchorPosX(posicionVisible.x, 0.5f).SetEase(Ease.OutBack))
+        seq.Append(panelTransform.DOAnchorPos(posicionVisible, 0.5f).SetEase(Ease.OutBack))
            .AppendInterval(2.5f)
-           .Append(panelTransform.DOAnchorPosX(posicionFuera.x, 0.5f).SetEase(Ease.InBack))
+           .Append(panelTransform.DOAnchorPos(posicionEntrada, 0.5f).SetEase(Ease.InBack))
            .OnComplete(() => gameObject.SetActive(false));
     }
 }
