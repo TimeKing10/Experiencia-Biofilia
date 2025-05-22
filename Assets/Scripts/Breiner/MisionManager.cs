@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class MisionManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class MisionManager : MonoBehaviour
     public Slider progressBar;
 
     public Animator starAnimator;
+
+    // Notificación UI
+    [Header("Notificación de Misión")]
+    public NotificacionMision notificacion; // Referencia al script de notificación
 
     void Start()
     {
@@ -35,14 +40,23 @@ public class MisionManager : MonoBehaviour
 
             if (!m.completada && EvaluarCondicion(m))
             {
-
-                starAnimator.SetTrigger("Shine");
                 m.completada = true;
                 Debug.Log($"¡Misión completada!: {m.descripcion}");
 
                 if (AnalyticsManager.Instance != null)
                 {
                     AnalyticsManager.Instance.EnviarEventoMision(i + 1, m.descripcion);
+                }
+
+                // Mostrar notificación con la descripción de la misión
+                if (notificacion != null)
+                {
+                    notificacion.MostrarNotificacion($"Lograste: {m.descripcion}");
+                }
+
+                if (starAnimator != null)
+                {
+                    starAnimator.SetTrigger("Shine");
                 }
             }
 
