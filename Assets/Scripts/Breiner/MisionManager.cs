@@ -11,8 +11,6 @@ public class MisionManager : MonoBehaviour
 
     [SerializeField] private Sprite Acomplished;
     [SerializeField] private Sprite Non;
-    public Slider progressBar;
-
     public Animator starAnimator;
 
     // Notificación UI
@@ -25,9 +23,6 @@ public class MisionManager : MonoBehaviour
         {
             if (img != null) img.sprite = Non;
         }
-
-        progressBar.value = 0f;
-        progressBar.maxValue = misiones.Count;
     }
 
     void Update()
@@ -68,7 +63,7 @@ public class MisionManager : MonoBehaviour
             misionLeave[i].sprite = Acomplished;
         }
 
-        progressBar.value = completadas;
+        
     }
 
     bool EvaluarCondicion(MisionConfig m)
