@@ -17,7 +17,7 @@ public class NotificacionMision : MonoBehaviour
         posicionFuera = new Vector2(-600f, posicionVisible.y);
 
         panelTransform.anchoredPosition = posicionFuera;
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     public void MostrarNotificacion(string mensaje)
