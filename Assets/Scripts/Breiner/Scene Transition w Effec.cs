@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Unity.Services.Authentication;
 
 public class SceneTransitionwEffec : MonoBehaviour
 {
@@ -63,7 +64,21 @@ public class SceneTransitionwEffec : MonoBehaviour
         DOTween.Clear(true);
         if (!string.IsNullOrEmpty(nextSceneName))
         {
+            SignOut();
             SceneManager.LoadScene(nextSceneName);
+        }
+    }
+
+    public void SignOut()
+    {
+        if (AuthenticationService.Instance.IsSignedIn)
+        {
+            AuthenticationService.Instance.SignOut();
+            Debug.Log("Sesión cerrada correctamente.");
+        }
+        else
+        {
+            Debug.LogWarning("No hay sesión iniciada para cerrar.");
         }
     }
 }
