@@ -575,7 +575,7 @@ PrefabInstance:
     - target: {fileID: 278611652708140026, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_fontColor.b
-      value: 0.7377358
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 278611652708140026, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -585,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 278611652708140026, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_fontColor.r
-      value: 0.7774777
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 278611652708140026, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
