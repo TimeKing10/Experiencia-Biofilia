@@ -16,7 +16,7 @@ public class Referencias : MonoBehaviour
     // 🔹 Variables compartidas
     public AudioSource cameraSound;
     public int jugadorID;
-
+    public GameObject jugador2UI;
     public static int totalScore = 0;
     public TextMeshProUGUI scoreText;
     public Canvas uiCanvas;
@@ -61,6 +61,7 @@ public class Referencias : MonoBehaviour
             
             jugador.previewImage = previewImage2;
             jugador.previewCanvasGroup = previewCanvasGroup2;
+            jugador2UI.SetActive(true);
         }
 
         // 🔹 Variables compartidas

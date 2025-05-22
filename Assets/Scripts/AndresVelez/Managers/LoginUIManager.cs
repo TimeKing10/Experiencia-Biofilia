@@ -76,7 +76,7 @@ public class LoginUIManager : MonoBehaviour
 
         if (!IsValidUsername(username) || !IsValidPassword(password))
         {
-            errorText.text = "El usuario debe tener 3-20 caracteres (letras, números, ., -, @, _).\n" +
+            errorText.text = "El usuario debe tener 3-6 caracteres (letras, números, ., -, @, _).\n" +
                              "La contraseña debe tener 8-30 caracteres, con mayúsculas, minúsculas, un número y un símbolo.";
             return;
         }
@@ -116,7 +116,7 @@ public class LoginUIManager : MonoBehaviour
     bool IsValidUsername(string username)
     {
         if (string.IsNullOrEmpty(username)) return false;
-        if (username.Length < 3 || username.Length > 20) return false;
+        if (username.Length < 3 || username.Length > 6) return false;
         return System.Text.RegularExpressions.Regex.IsMatch(username, @"^[a-zA-Z0-9.\-@_]+$");
     }
 

@@ -2827,7 +2827,7 @@ PrefabInstance:
     - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: nextSceneName
-      value: 
+      value: Nivel Tatacoa
       objectReference: {fileID: 0}
     - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}

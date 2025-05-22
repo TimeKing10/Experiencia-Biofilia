@@ -26,14 +26,11 @@ public class SceneChanger : MonoBehaviour
         ScoreManager.Instance.currentScore = TakePhotos.totalScore;
         ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
 
-        await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
-        int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
+       int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
 
-        ScoreManager.Instance.SubmitScoreToLeaderboard(
-            ScoreManager.Instance.currentLevel,
-            updatedHighScore
-        );
+        ScoreManager.Instance.SubmitTotalScoreToLeaderboard();
 
         SceneManager.LoadScene(sceneName);
     }
+
 }

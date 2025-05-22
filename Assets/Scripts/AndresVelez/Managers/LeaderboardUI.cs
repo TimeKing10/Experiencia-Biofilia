@@ -40,7 +40,7 @@ public class LeaderboardUI : MonoBehaviour
         {
             var scoresResponse = await LeaderboardsService.Instance.GetScoresAsync(leaderboardId, new GetScoresOptions
             {
-                Limit = 20
+                Limit = 10
             });
 
             foreach (Transform child in contentParent)
