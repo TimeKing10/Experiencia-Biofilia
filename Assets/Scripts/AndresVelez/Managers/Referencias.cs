@@ -52,13 +52,13 @@ public class Referencias : MonoBehaviour
         // 🔹 Variables que cambian por jugador
         if (jugador.jugadorID == 1)
         {
-            jugador.photosRemainingText = photosRemainingText1;
+            
             jugador.previewImage = previewImage1;
             jugador.previewCanvasGroup = previewCanvasGroup1;
         }
         else if (jugador.jugadorID == 2)
         {
-            jugador.photosRemainingText = photosRemainingText2;
+            
             jugador.previewImage = previewImage2;
             jugador.previewCanvasGroup = previewCanvasGroup2;
         }

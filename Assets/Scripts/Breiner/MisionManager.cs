@@ -12,6 +12,8 @@ public class MisionManager : MonoBehaviour
     [SerializeField] private Sprite Non;
     public Slider progressBar;
 
+    public Animator starAnimator;
+
     void Start()
     {
         foreach (Image img in misionLeave)
@@ -33,8 +35,10 @@ public class MisionManager : MonoBehaviour
 
             if (!m.completada && EvaluarCondicion(m))
             {
+
+                starAnimator.SetTrigger("Shine");
                 m.completada = true;
-                Debug.Log($"✅ ¡Misión completada!: {m.descripcion}");
+                Debug.Log($"¡Misión completada!: {m.descripcion}");
 
                 if (AnalyticsManager.Instance != null)
                 {
