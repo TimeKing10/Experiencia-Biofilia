@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 public class SceneChanger : MonoBehaviour
 {
     public string sceneName; // Especifica el nombre de la escena en el Inspector
+    public ResumenFinal resumenFinal;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,14 +24,15 @@ public class SceneChanger : MonoBehaviour
 
     private async void EnviarDatosYCambiarEscena()
     {
-        ScoreManager.Instance.currentScore = TakePhotos.totalScore;
-        ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
+        resumenFinal.MostrarResumen();
+        //ScoreManager.Instance.currentScore = TakePhotos.totalScore;
+        // ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
 
-       int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
+        //int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
 
-        ScoreManager.Instance.SubmitTotalScoreToLeaderboard();
+        //ScoreManager.Instance.SubmitTotalScoreToLeaderboard();
 
-        SceneManager.LoadScene(sceneName);
+        //SceneManager.LoadScene(sceneName);
     }
 
 }
