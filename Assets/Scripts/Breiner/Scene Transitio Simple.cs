@@ -25,11 +25,11 @@ public class SceneTransitioSimple : MonoBehaviour
         if (AuthenticationService.Instance.IsSignedIn)
         {
             AuthenticationService.Instance.SignOut();
-            Debug.Log("Sesión cerrada correctamente.");
+            Debug.Log("SesiÃ³n cerrada correctamente.");
         }
         else
         {
-            Debug.LogWarning("No hay sesión iniciada para cerrar.");
+            Debug.LogWarning("No hay sesiÃ³n iniciada para cerrar.");
         }
 
         SceneManager.LoadScene(nextSceneName);
@@ -49,5 +49,8 @@ public class SceneTransitioSimple : MonoBehaviour
                 Debug.LogError("Error al inicializar Unity Services: " + initTask.Exception);
             }
         }
+
+        SceneManager.LoadScene(nextSceneName);
     }
+
 }

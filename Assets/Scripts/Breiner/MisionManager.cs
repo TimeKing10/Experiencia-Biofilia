@@ -2,7 +2,6 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class MisionManager : MonoBehaviour
 {
@@ -13,9 +12,8 @@ public class MisionManager : MonoBehaviour
     [SerializeField] private Sprite Non;
     public Animator starAnimator;
 
-    // Notificación UI
     [Header("Notificación de Misión")]
-    public NotificacionMision notificacion; // Referencia al script de notificación
+    public NotificacionMision notificacion;
 
     void Start()
     {
@@ -43,7 +41,6 @@ public class MisionManager : MonoBehaviour
                     AnalyticsManager.Instance.EnviarEventoMision(i + 1, m.descripcion);
                 }
 
-                // Mostrar notificación con la descripción de la misión
                 if (notificacion != null)
                 {
                     notificacion.MostrarNotificacion($"Lograste: {m.descripcion}");
@@ -62,8 +59,6 @@ public class MisionManager : MonoBehaviour
         {
             misionLeave[i].sprite = Acomplished;
         }
-
-        
     }
 
     bool EvaluarCondicion(MisionConfig m)
@@ -84,6 +79,17 @@ public class MisionManager : MonoBehaviour
         }
 
         return m.mayorQue ? valorActual > m.valorObjetivo : valorActual <= m.valorObjetivo;
+    }
+
+    // NUEVO: Método público para obtener número de misiones completadas
+    public int ObtenerCantidadMisionesCompletadas()
+    {
+        int contador = 0;
+        foreach (var m in misiones)
+        {
+            if (m.completada) contador++;
+        }
+        return contador;
     }
 }
 

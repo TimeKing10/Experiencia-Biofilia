@@ -12,13 +12,15 @@ GameObject:
   - component: {fileID: 3549999456649532193}
   - component: {fileID: 9026670959192929509}
   - component: {fileID: 7772794622651904007}
+  - component: {fileID: 1055214668192132824}
+  - component: {fileID: 3317663482378242263}
   m_Layer: 0
   m_Name: Controlador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &608102874464231990
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882510637124455344}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 544.7355, y: 191.99542, z: -1.7471391}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NotificationBehavior: 0
-  m_MaxPlayerCount: -1
+  m_MaxPlayerCount: 2
   m_AllowJoining: 1
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
@@ -118,7 +120,42 @@ MonoBehaviour:
   previewCanvasGroup1: {fileID: 0}
   previewCanvasGroup2: {fileID: 0}
   cameraSound: {fileID: 0}
-  totalScore: 0
+  jugadorID: 0
+  jugador2UI: {fileID: 0}
   scoreText: {fileID: 0}
   uiCanvas: {fileID: 0}
   photoCamera: {fileID: 0}
+--- !u!114 &1055214668192132824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882510637124455344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001db0a653c76c64b9e63f8b43862fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3317663482378242263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882510637124455344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204101a69f491e9448d20068b9858999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotsFinales:
+  - nombreAnimal: CacaoPrincipal
+    imagenUI: {fileID: 0}
+  - nombreAnimal: Jaguar
+    imagenUI: {fileID: 0}
+  - nombreAnimal: Guacamaya
+    imagenUI: {fileID: 0}
+  panelFotos: {fileID: 0}
+  textoEstrellas: {fileID: 0}
+  textoPuntaje: {fileID: 0}

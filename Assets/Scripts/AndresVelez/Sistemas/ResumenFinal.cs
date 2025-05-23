@@ -1,18 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 
 public class ResumenFinal : MonoBehaviour
 {
     [System.Serializable]
     public class FotoFinalSlot
     {
-        public string nombreAnimal; // Identificador único para cada animal
+        public string nombreAnimal;
         public Image imagenUI;
     }
 
     public List<FotoFinalSlot> slotsFinales = new List<FotoFinalSlot>();
-    public GameObject panelFotos; // Panel que contiene las imágenes y está apagado
+    public GameObject panelFotos;
+
+    [Header("Resumen numÃ©rico")]
+    public GameObject textoEstrellas;
+
+    public TMP_Text textoaCopiar;
+    public TMP_Text textoPuntaje;
+
 
     public void ActualizarImagenUI(string nombreAnimal, Texture2D foto)
     {
@@ -37,11 +45,27 @@ public class ResumenFinal : MonoBehaviour
         return nombres;
     }
 
+    public void MostrarResumenFinal(string puntajeTotal)
+    {
+        if (textoEstrellas != null)
+        {
+            textoEstrellas.SetActive(true);
+            
+        }
+
+        if (textoPuntaje != null)
+            textoPuntaje.text = textoaCopiar.text; 
+    }
+
     public void MostrarResumen()
     {
+
         if (panelFotos != null)
         {
+            MostrarResumenFinal(textoPuntaje.text);
             panelFotos.SetActive(true);
+
         }
+        
     }
 }
