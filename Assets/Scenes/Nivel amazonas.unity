@@ -39790,7 +39790,7 @@ MonoBehaviour:
   m_Path: {fileID: 576782988}
   m_UpdateMethod: 1
   m_PositionUnits: 1
-  m_Speed: 16
+  m_Speed: 4
   m_Position: 0
 --- !u!95 &1426430268
 Animator:
