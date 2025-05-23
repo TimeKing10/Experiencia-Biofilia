@@ -9,12 +9,9 @@ public class Animal : MonoBehaviour
     public bool fotografiado = false;
     public bool epica = false;
 
-    private Animator animator;
+    public Animator animator;
 
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    
 
     void Update()
     {

@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: e8f40765d727d8b4795501a7325766a0
+  - enabled: 1
+    path: Assets/Scenes/Nivel Tatacoa.unity
+    guid: 199bf63762c736847861383566071f42
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3703d7147d5176941a91e3da47b85a0a,
       type: 3}
