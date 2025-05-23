@@ -11,10 +11,10 @@ public class MapaUIManager : MonoBehaviour
     async void Start()
     {
         int score1 = await ScoreManager.Instance.LoadHighScore("Nivel amazonas");
-        nivel1RecordText.text = "Récord: " + score1;
+        nivel1RecordText.text = "Record: " + score1;
 
-        // Puedes agregar más niveles así:
-        // int score2 = await ScoreManager.Instance.LoadHighScore("Nivel sabana");
-        // nivel2RecordText.text = "Récord: " + score2;
+        
+        int score2 = await ScoreManager.Instance.LoadHighScore("Nivel Tatacoa");
+        nivel2RecordText.text = "Record: " + score2;
     }
 }
