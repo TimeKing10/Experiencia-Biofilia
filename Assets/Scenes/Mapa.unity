@@ -604,12 +604,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194178801}
   m_CullTransparentMesh: 1
---- !u!1 &219220391 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 483382068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258082990
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,12 +679,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258082990}
   m_CullTransparentMesh: 1
---- !u!1 &282970667 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4328527077747226935, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1709514191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &441398678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -805,6 +793,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 8d219aa5be29daa4f99d2673832d5885,
         type: 3}
+    - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.026379334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.93207544
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.33182967
+      objectReference: {fileID: 0}
     - target: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Name
@@ -1073,6 +1076,59 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelTag
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelName
+      value: Bosque Premontano
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelDescription
+      value: "El bosque premontano te estar\xE1 esperando\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4284878735646626050, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1292,6 +1348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
+      propertyPath: nextSceneName
+      value: Mapa
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
       propertyPath: transitionDuration
       value: 10
       objectReference: {fileID: 0}
@@ -1326,11 +1387,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 719991648}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 483382075}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
 --- !u!224 &483382069 stripped
 RectTransform:
@@ -1344,7 +1401,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 483382068}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219220391}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db083c65d918dec448b8f1e956f98a93, type: 3}
@@ -1356,36 +1413,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 483382068}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219220391}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &483382075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219220391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e92ff7420c68a4f80c8429647232f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelDescription: sadasdasdasdasdasdasdasd
-  levelName: T
-  levelImages:
-  - {fileID: 21300000, guid: f3d1e048e4380b045878e022b0ebc5f8, type: 3}
-  - {fileID: 21300000, guid: f3d1e048e4380b045878e022b0ebc5f8, type: 3}
-  - {fileID: 21300000, guid: f3d1e048e4380b045878e022b0ebc5f8, type: 3}
-  levelTag: T
-  levelObjectivesText:
-  - SDADADAsdasdadadas
-  - 
-  - 
-  startTag: {fileID: 1167155123}
 --- !u!1 &581318393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,12 +2224,6 @@ RectTransform:
   m_AnchoredPosition: {x: -37, y: 21}
   m_SizeDelta: {x: 382.7106, y: 137.0273}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1167155123 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4328527077747226935, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 483382068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1196808316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,7 +2474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Objetivos de locaci\xF3n"
+  m_text: Objetivo de locacion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f9c7ed061dfdd9f4e9a6540365acaca2, type: 2}
   m_sharedMaterial: {fileID: -7421166297856480885, guid: f9c7ed061dfdd9f4e9a6540365acaca2,
@@ -2691,7 +2718,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1709514191}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761917055}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db083c65d918dec448b8f1e956f98a93, type: 3}
@@ -2703,7 +2730,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1709514191}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761917055}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3263,6 +3290,58 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelTag
+      value: Bosque Seco Tropical
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelName
+      value: Tatacoa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelDescription
+      value: "En el crujido del suelo reseco, la tamand\xFAa se desliza como un eco
+        suave del viento, olfateando con paciencia el rastro de hormigas ocultas,
+        y el cactus cabecinegro se alza eterno. Pero si miras con atenci\xF3n, el
+        pasado despierta: el ave del terror corre libre, cazador implacable que domina
+        esta tierra en un tiempo olvidado."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b707c70e88f05c7429c8a0d86437635b,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 702625a065abc514f866d98dc57f3000,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 073b516ac3893f447821014c79a9f920,
+        type: 3}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[0]
+      value: "Alcanzar m\xE1s de 2000 Puntos de expedici\xF3n "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[1]
+      value: 'Alcanza 10 Fotos buenas durante el recorrido '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: levelObjectivesText.Array.data[2]
+      value: "Toma 10 fotos \xC9picas durante todo el recorrido"
+      objectReference: {fileID: 0}
     - target: {fileID: 4284878735646626050, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3437,17 +3516,17 @@ PrefabInstance:
     - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.02745098
       objectReference: {fileID: 0}
     - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.93333334
       objectReference: {fileID: 0}
     - target: {fileID: 5159912067054050659, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -3501,11 +3580,7 @@ PrefabInstance:
     - {fileID: 2430779410968053930, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     - {fileID: 5401238378908518374, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1761917059}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
 --- !u!1 &1757543297
 GameObject:
@@ -3625,39 +3700,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &1761917055 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1709514191}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1761917059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761917055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e92ff7420c68a4f80c8429647232f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelDescription: "En el crujir del suelo reseco, la tamand\xFAa se desliza como
-    un eco del viento mientras que el cactus cabecinegro se alza eterno. Si miras
-    con atenci\xF3n, el pasado despertar\xE1: el ave del terror corre libre como
-    cazador implacable de un tiempo olvidado."
-  levelName: Tatacoa
-  levelImages:
-  - {fileID: 21300000, guid: f91e62aa56167ed4d8d7c7429b95adec, type: 3}
-  - {fileID: 21300000, guid: f91e62aa56167ed4d8d7c7429b95adec, type: 3}
-  - {fileID: 21300000, guid: f91e62aa56167ed4d8d7c7429b95adec, type: 3}
-  levelTag: Bosque Seco Tropical
-  levelObjectivesText:
-  - 'Inpsum efficitur. placerat at,   '
-  - 'Donec In ipsum efficitur. placerat at,   '
-  - 'In nisl. Nunc Nunc non turpis diam '
-  startTag: {fileID: 282970667}
 --- !u!1 &1841246642
 GameObject:
   m_ObjectHideFlags: 0
