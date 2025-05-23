@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4315835376207068639}
   - component: {fileID: 7301153454766074591}
+  - component: {fileID: 8543450741213896236}
   m_Layer: 0
   m_Name: ActivaAnimAveCamina
   m_TagString: Untagged
@@ -47,9 +48,22 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 164.44157, y: 53.407143, z: 45.42772}
-  m_Center: {x: 62.99819, y: 26.203571, z: 13.652824}
+  m_Size: {x: 164.44157, y: 83.29738, z: 45.42772}
+  m_Center: {x: 62.99819, y: 11.258455, z: 13.652824}
+--- !u!114 &8543450741213896236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4200313209000454869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f44f3d26649172489784b80bd4848ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
