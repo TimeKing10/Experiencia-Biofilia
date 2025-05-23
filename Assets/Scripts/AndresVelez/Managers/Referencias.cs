@@ -44,6 +44,7 @@ public class Referencias : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "0";
+            jugadorID = 1;
         }
     }
 
