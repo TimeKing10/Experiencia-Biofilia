@@ -728,6 +728,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -37.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4338747635751049635, guid: 9a837c7892052ca499fac47ad2f845ba,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1093288470}
+    - target: {fileID: 4338747635751049635, guid: 9a837c7892052ca499fac47ad2f845ba,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338747635751049635, guid: 9a837c7892052ca499fac47ad2f845ba,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4527369176267936522, guid: 9a837c7892052ca499fac47ad2f845ba,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -969,6 +984,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1943531764}
+    - targetCorrespondingSourceObject: {fileID: 8420755197548345830, guid: 9a837c7892052ca499fac47ad2f845ba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093288470}
   m_SourcePrefab: {fileID: 100100000, guid: 9a837c7892052ca499fac47ad2f845ba, type: 3}
 --- !u!114 &260705128 stripped
 MonoBehaviour:
@@ -3017,6 +3036,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 265783393}
   m_SourcePrefab: {fileID: 100100000, guid: 393cc61291e2c5f478ea131a4ac267a1, type: 3}
+--- !u!1 &1093288469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8420755197548345830, guid: 9a837c7892052ca499fac47ad2f845ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 260705127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093288470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093288469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78cd735af55a3543b09a7ef405e2106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Mapa
+  resumenFinal: {fileID: 0}
 --- !u!4 &1197773742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4069297218804350441, guid: 5fd59d5de86945b469bc6915e9dec599,
@@ -4063,7 +4102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78cd735af55a3543b09a7ef405e2106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Mapa
+  sceneName: Nivel Tatacoa
   resumenFinal: {fileID: 0}
 --- !u!1 &1965535810
 GameObject:
@@ -4473,6 +4512,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: =====Camaras=====
       objectReference: {fileID: 0}
+    - target: {fileID: 814664563899044776, guid: fb6d068293f44054eb757c6a241eb383,
+        type: 3}
+      propertyPath: newSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 823059882167635782, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
       propertyPath: m_PathPosition
@@ -4588,6 +4632,11 @@ PrefabInstance:
       propertyPath: m_Position
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3546439443369713368, guid: fb6d068293f44054eb757c6a241eb383,
+        type: 3}
+      propertyPath: newSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3619107253061808931, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
       propertyPath: m_LookAt
@@ -4608,6 +4657,11 @@ PrefabInstance:
       propertyPath: sonido
       value: 
       objectReference: {fileID: 17551854}
+    - target: {fileID: 4303557208501675434, guid: fb6d068293f44054eb757c6a241eb383,
+        type: 3}
+      propertyPath: newSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5708770118153858520, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6390,6 +6444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainStar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258872493999461827, guid: 2176e5e78c3e09f41b46289b9c102961,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3258872493999461827, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
