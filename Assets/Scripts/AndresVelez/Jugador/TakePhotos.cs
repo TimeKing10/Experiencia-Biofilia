@@ -3,16 +3,15 @@ using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEditor;
 using System.Collections.Generic;
 
 public class TakePhotos : MonoBehaviour
 {
-    public GameObject floatingPointsPrefab; 
+    public GameObject floatingPointsPrefab;
 
     private int pointsPerPhoto;
     private static int nextID = 1;
-    public Image fondoJugador; // Asigna esta en el Inspector o con GetComponent
+    public Image fondoJugador;
 
     public int jugadorID;
     public Camera photoCamera;
@@ -49,18 +48,16 @@ public class TakePhotos : MonoBehaviour
     private bool canTakePhoto = true;
     private bool isReloading = false;
 
-    public static Dictionary<string, FotoAnimal> mejoresFotos = new Dictionary<string, FotoAnimal>();
-
     private void Awake()
     {
         jugadorID = nextID;
         nextID++;
 
         var cargador = transform.Find("CargadorJugador1");
-        if (cargador != null){playerNameText = cargador.GetComponent<TextMeshProUGUI>();}
-        
-
-
+        if (cargador != null)
+        {
+            playerNameText = cargador.GetComponent<TextMeshProUGUI>();
+        }
     }
 
     void Start()
@@ -68,7 +65,7 @@ public class TakePhotos : MonoBehaviour
         Referencias.Instance.AsignarValores(this);
 
         photosRemaining = maxPhotos;
-        Invoke(nameof(SafeUpdateUI), 0.1f); // Espera una décima de segundo
+        Invoke(nameof(SafeUpdateUI), 0.1f);
         ActivarMira(MiraDefault);
 
         if (playerNameText != null)
@@ -80,7 +77,6 @@ public class TakePhotos : MonoBehaviour
         {
             fondoJugador.color = new Color(1f, 0.7f, 0.2f);
         }
-
     }
 
     void SafeUpdateUI()
@@ -115,21 +111,18 @@ public class TakePhotos : MonoBehaviour
     {
         canTakePhoto = false;
         photosRemaining--;
-        ActivarMira(MiraMala);       
+        ActivarMira(MiraMala);
         Animal animal = DetectarAnimal();
 
         if (animal != null)
         {
             pointsPerPhoto = animal.GetScore();
-            showFloatingPoints();   
+            showFloatingPoints();
             totalScore += animal.GetScore();
 
             if (!animal.fotografiado)
             {
                 animal.fotografiado = true;
-               
-                
-
                 if (animal.animalAudioSource != null)
                 {
                     animal.animalAudioSource.Play();
@@ -148,8 +141,6 @@ public class TakePhotos : MonoBehaviour
                 ActivarMira(MiraBuena);
                 AnalyticsManager.Instance?.EnviarEventoTipoFoto("buena");
             }
-
-            
         }
         else
         {
@@ -164,7 +155,7 @@ public class TakePhotos : MonoBehaviour
 
         if (photosRemaining <= 0)
         {
-            StartCoroutine(RecargarFotos());  
+            StartCoroutine(RecargarFotos());
         }
         else
         {
@@ -173,6 +164,7 @@ public class TakePhotos : MonoBehaviour
             canTakePhoto = true;
         }
     }
+
     void showFloatingPoints()
     {
         Animal animal = DetectarAnimal();
@@ -184,9 +176,10 @@ public class TakePhotos : MonoBehaviour
         {
             pointsPerPhoto = 0;
         }
-        var go= Instantiate(floatingPointsPrefab, transform.position, Quaternion.identity, transform);
-        go.GetComponent<TextMeshProUGUI>().text = "+" + (pointsPerPhoto).ToString();
+        var go = Instantiate(floatingPointsPrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMeshProUGUI>().text = "+" + pointsPerPhoto.ToString();
     }
+
     IEnumerator RecargarFotos()
     {
         isReloading = true;
@@ -236,13 +229,11 @@ public class TakePhotos : MonoBehaviour
         fullScreenshot.Apply();
         uiCanvas.enabled = true;
 
-        // Obtener las 4 esquinas del apuntador en mundo
         Vector3[] worldCorners = new Vector3[4];
         apuntador.GetWorldCorners(worldCorners);
 
-        // Convertir esas esquinas a coordenadas de pantalla
-        Vector2 screenBL = RectTransformUtility.WorldToScreenPoint(null, worldCorners[0]); // bottom-left
-        Vector2 screenTR = RectTransformUtility.WorldToScreenPoint(null, worldCorners[2]); // top-right
+        Vector2 screenBL = RectTransformUtility.WorldToScreenPoint(null, worldCorners[0]);
+        Vector2 screenTR = RectTransformUtility.WorldToScreenPoint(null, worldCorners[2]);
 
         int width = Mathf.RoundToInt(screenTR.x - screenBL.x);
         int height = Mathf.RoundToInt(screenTR.y - screenBL.y);
@@ -260,28 +251,43 @@ public class TakePhotos : MonoBehaviour
         croppedScreenshot.SetPixels(fullScreenshot.GetPixels(x, y, width, height));
         croppedScreenshot.Apply();
 
-        Destroy(fullScreenshot);
-
         if (animal != null)
         {
-            FotoAnimal nuevaFoto = new FotoAnimal
-            {
-                nombreAnimal = animal.nombreAnimal,
-                foto = croppedScreenshot,
-                score = animal.GetScore()
-            };
+            string nombreObjeto = animal.gameObject.name;
+            string nombreAnimalParaResumen = ObtenerNombreAnimalParaResumen(nombreObjeto);
 
-            if (!mejoresFotos.ContainsKey(animal.nombreAnimal) || nuevaFoto.score > mejoresFotos[animal.nombreAnimal].score)
+            if (!string.IsNullOrEmpty(nombreAnimalParaResumen))
             {
-                mejoresFotos[animal.nombreAnimal] = nuevaFoto;
+                ResumenFinal resumen = FindObjectOfType<ResumenFinal>();
+                resumen?.ActualizarImagenUI(nombreAnimalParaResumen, croppedScreenshot);
+            }
+            else
+            {
+                Debug.LogWarning($"Animal '{nombreObjeto}' no encontrado en la lista de resumen.");
             }
         }
 
         MostrarFotoEnUI(croppedScreenshot);
+
+        Destroy(fullScreenshot);
     }
 
+    string ObtenerNombreAnimalParaResumen(string nombreObjeto)
+    {
+        ResumenFinal resumen = FindObjectOfType<ResumenFinal>();
+        if (resumen == null) return null;
 
+        List<string> nombresAnimales = resumen.ObtenerNombresAnimales();
 
+        foreach (string nombreAnimal in nombresAnimales)
+        {
+            if (nombreObjeto.Contains(nombreAnimal))
+            {
+                return nombreAnimal;
+            }
+        }
+        return null;
+    }
 
     void MostrarFotoEnUI(Texture2D foto)
     {

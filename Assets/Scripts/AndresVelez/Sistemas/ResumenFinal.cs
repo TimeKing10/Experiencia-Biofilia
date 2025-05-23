@@ -1,34 +1,47 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using TMPro;
-using UnityEngine.InputSystem;
-using UnityEditor;
+using System.Collections.Generic;
+
 public class ResumenFinal : MonoBehaviour
 {
-    public Transform panelFotosAnimales;
-    public GameObject prefabAnimalItem;
-
-    void Start()
+    [System.Serializable]
+    public class FotoFinalSlot
     {
-        MostrarFotosMejores();
+        public string nombreAnimal; // Identificador único para cada animal
+        public Image imagenUI;
     }
 
-    void MostrarFotosMejores()
+    public List<FotoFinalSlot> slotsFinales = new List<FotoFinalSlot>();
+    public GameObject panelFotos; // Panel que contiene las imágenes y está apagado
+
+    public void ActualizarImagenUI(string nombreAnimal, Texture2D foto)
     {
-        foreach (var entry in TakePhotos.mejoresFotos.Values)
+        foreach (var slot in slotsFinales)
         {
-            GameObject item = Instantiate(prefabAnimalItem, panelFotosAnimales);
-            var texts = item.GetComponentsInChildren<TextMeshProUGUI>();
-            var images = item.GetComponentsInChildren<Image>();
+            if (slot.nombreAnimal == nombreAnimal)
+            {
+                slot.imagenUI.sprite = Sprite.Create(foto, new Rect(0, 0, foto.width, foto.height), new Vector2(0.5f, 0.5f));
+                slot.imagenUI.gameObject.SetActive(true);
+                break;
+            }
+        }
+    }
 
-            // Asignar texto y sprite
-            foreach (var text in texts)
-                text.text = entry.nombreAnimal;
+    public List<string> ObtenerNombresAnimales()
+    {
+        List<string> nombres = new List<string>();
+        foreach (var slot in slotsFinales)
+        {
+            nombres.Add(slot.nombreAnimal);
+        }
+        return nombres;
+    }
 
-            foreach (var img in images)
-                if (entry.foto != null)
-                    img.sprite = Sprite.Create(entry.foto, new Rect(0, 0, entry.foto.width, entry.foto.height), new Vector2(0.5f, 0.5f));
+    public void MostrarResumen()
+    {
+        if (panelFotos != null)
+        {
+            panelFotos.SetActive(true);
         }
     }
 }
