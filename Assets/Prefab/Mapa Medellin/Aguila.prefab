@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7460210208241522599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2538971718879453662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105069488646197232}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingLeftFeathers2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6978178957281041624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Neck1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 555066715351655306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingRightFeathers3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2502636942030240788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5559720607010133988}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7715102289649136988}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574682498131114551}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6875953060556988959}
   - component: {fileID: 181876371075522041}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SK_Eagle2Sided
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5361954351279942096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1277519251767552579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7241708098576693973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingLeftFeathers3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089409954228301584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingLefttFeathers4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5600988868220987167}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingRightFeathers2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386776626931118120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7823981954406854420}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingRightFeathers1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3697387417507434982}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_ TailL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5527525732574637873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429005307049094252}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4003675023145353311}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6073406100861803099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingRightFeathers4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5837053882812932361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4657343965763260485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9027315039666935416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216704699697888274}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7392270448071082620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535522485218803842}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_ TailR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782900884227406405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1038,7 +1038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055120383111257018}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880586836808793705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1104,7 +1104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4819793393910406342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5798116411532963695}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4525803624381341997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1201,7 +1201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7471697018234597942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1233,7 +1233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1752789935187042010}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1266,7 +1266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 127143997688312634}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5939316210700635308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1333,7 +1333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8222395486505832802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2735969577485890798}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4899096217845957677}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5878288995233367093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1462,7 +1462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7402412730341020071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R HorseLink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3546411086185910015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056483723976363812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9133895575129486227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ Queue de cheval 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8210692228441166602}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EAGLE_ L Toe12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,9 @@ GameObject:
   - component: {fileID: 6276339111740988754}
   - component: {fileID: 6073943884407462118}
   - component: {fileID: 1771983266704018409}
-  m_Layer: 0
+  - component: {fileID: 7649601215726761729}
+  - component: {fileID: 5327316984623617915}
+  m_Layer: 3
   m_Name: Aguila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,6 +1709,158 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.2670133, y: 0.85581803, z: 1}
   m_Center: {x: -0.025389075, y: 0.4187137, z: 0}
+--- !u!114 &7649601215726761729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967798570410739714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59cf6477ba82884c928bf2fea58888b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseScore: 20
+  epicMultiplier: 2
+  nombreAnimal: 
+  animalAudioSource: {fileID: 0}
+  fotografiado: 0
+  epica: 0
+  animator: {fileID: 6276339111740988754}
+--- !u!82 &5327316984623617915
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967798570410739714}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -7382960520354777947, guid: 78d4baaba1a6ae3448ce199691854ffb,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 0ace12e39bb84a443a70e75417062939, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.0072365
+      inSlope: -20.007967
+      outSlope: -20.007967
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.06229706
+      value: 0.25482178
+      inSlope: -1.2504979
+      outSlope: -1.2504979
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.07049332
+      value: 0.167099
+      inSlope: -1.2072248
+      outSlope: -1.2072248
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.7068928
+    - serializedVersion: 3
+      time: 0.2983612
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6909073
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8
+      value: 0.0625
+      inSlope: -0.07815612
+      outSlope: -0.07815612
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.05
+      inSlope: -0.05001994
+      outSlope: -0.05001994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &9210827892618824513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,7 +1870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5047864116793295323}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eagle_WingLeftFeathers1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
