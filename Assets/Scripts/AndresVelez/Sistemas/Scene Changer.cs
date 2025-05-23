@@ -25,13 +25,13 @@ public class SceneChanger : MonoBehaviour
     private async void EnviarDatosYCambiarEscena()
     {
         resumenFinal.MostrarResumen();
-        ScoreManager.Instance.currentScore = TakePhotos.totalScore;
+        /*ScoreManager.Instance.currentScore = TakePhotos.totalScore;
         ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
 
         int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
 
         ScoreManager.Instance.SubmitTotalScoreToLeaderboard();
-
+*/
     }    
     public void loadEscena()
     {
