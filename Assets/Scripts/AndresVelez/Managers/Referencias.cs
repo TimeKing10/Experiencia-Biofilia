@@ -21,6 +21,7 @@ public class Referencias : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public Canvas uiCanvas;
     public Camera photoCamera;
+    public float rangoRaycast = 20f;
 
     private static Referencias _instance;
     public static Referencias Instance
@@ -53,13 +54,11 @@ public class Referencias : MonoBehaviour
         // 🔹 Variables que cambian por jugador
         if (jugador.jugadorID == 1)
         {
-            
             jugador.previewImage = previewImage1;
             jugador.previewCanvasGroup = previewCanvasGroup1;
         }
         else if (jugador.jugadorID == 2)
         {
-            
             jugador.previewImage = previewImage2;
             jugador.previewCanvasGroup = previewCanvasGroup2;
             jugador2UI.SetActive(true);
@@ -72,6 +71,8 @@ public class Referencias : MonoBehaviour
         jugador.uiCanvas = uiCanvas;
         jugador.photoCamera = photoCamera;
 
-
+        // ➕ Nuevo: rango del raycast
+        jugador.rangoRaycast = rangoRaycast;
     }
+
 }
