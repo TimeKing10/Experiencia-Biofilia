@@ -49,5 +49,23 @@ public class SceneTransitioSimple : MonoBehaviour
                 Debug.LogError("Error al inicializar Unity Services: " + initTask.Exception);
             }
         }
+
+        SceneManager.LoadScene(nextSceneName);
+    }
+
+    private IEnumerator EnsureUnityServicesInitialized()
+    {
+        if (UnityServices.State == ServicesInitializationState.Uninitialized)
+        {
+            var initTask = UnityServices.InitializeAsync();
+
+            while (!initTask.IsCompleted)
+                yield return null;
+
+            if (initTask.Exception != null)
+            {
+                Debug.LogError("Error al inicializar Unity Services: " + initTask.Exception);
+            }
+        }
     }
 }
