@@ -13,10 +13,7 @@ public class SpeedDollyCart : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (animator != null)
-            {
-               animator.SetBool("EmpezarAnimacion", true); 
-            }
+            animator.SetBool("EmpezarAnimacion", true);
             dollyCart.m_Speed = newSpeed;
             
         }
