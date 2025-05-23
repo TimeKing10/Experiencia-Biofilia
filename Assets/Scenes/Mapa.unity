@@ -1200,8 +1200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel1RecordText: {fileID: 194178803}
-  nivel2RecordText: {fileID: 0}
-  nivel3RecordText: {fileID: 0}
+  nivel2RecordText: {fileID: 194178803}
+  nivel3RecordText: {fileID: 194178803}
 --- !u!4 &581318395
 Transform:
   m_ObjectHideFlags: 0
