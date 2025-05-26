@@ -107,7 +107,7 @@
                 {
                     "name": "",
                     "id": "ad47f520-e897-48f7-ab18-44898fed5179",
-                    "path": "<XInputController>/start",
+                    "path": "<Gamepad>/{Menu}",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Jugador1",
