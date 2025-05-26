@@ -35,6 +35,8 @@ public class SceneChanger : MonoBehaviour
     }    
     public void loadEscena()
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene(sceneName);
     }
 
