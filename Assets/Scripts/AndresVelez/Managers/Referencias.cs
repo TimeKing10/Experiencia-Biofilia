@@ -36,6 +36,13 @@ public class Referencias : MonoBehaviour
         {
             _instance = this;
         }
+        
+    }
+
+    private void Start()
+    {
+        TakePhotos.ResetID();
+
         ReiniciarPuntaje();
     }
 
