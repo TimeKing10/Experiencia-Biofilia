@@ -552,7 +552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4152174958779472395
 RectTransform:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3e302267a5c6d244abbe2f50dc5eb4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca869dd944d5f54e9ec614b26f10dcb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -923,7 +923,7 @@ MonoBehaviour:
   rechargeTime: 1
   previewDuration: 2
   fotoSize: 500
-  rangoRaycast: 20
+  rangoRaycast: 17
   MiraDefault: {fileID: 5489779137490368595}
   MiraMala: {fileID: 3746603461855088944}
   MiraBuena: {fileID: 6898705468164271665}
