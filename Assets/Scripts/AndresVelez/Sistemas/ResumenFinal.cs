@@ -78,18 +78,21 @@ public class ResumenFinal : MonoBehaviour
 
     private IEnumerator AnimarResumen()
     {
-        // Animar estrellas una por una
         foreach (var estrella in estrellas)
 {
     if (estrella != null)
     {
-        estrella.gameObject.SetActive(true); // Activar primero
-        estrella.transform.localScale = Vector3.zero; // Reiniciar escala
-        estrella.transform.DOScale(1f, 0.6f)           // Animar pop
+        estrella.gameObject.SetActive(true);
+        estrella.transform.localScale = Vector3.zero;
+
+        yield return null; // 
+
+        estrella.transform.DOScale(1f, 0.6f)
             .SetEase(Ease.OutBack);
 
         audioSource?.PlayOneShot(popSound);
         yield return new WaitForSeconds(delayEntreEstrellas);
+    
     }
 }
 
