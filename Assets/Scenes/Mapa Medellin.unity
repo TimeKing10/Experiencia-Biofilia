@@ -868,6 +868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: =====Camaras=====
       objectReference: {fileID: 0}
+    - target: {fileID: 960776201565800812, guid: d248d430ccded044da246b96a5f6758a,
+        type: 3}
+      propertyPath: m_PathPosition
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3457563623874254074, guid: d248d430ccded044da246b96a5f6758a,
         type: 3}
       propertyPath: m_LookAt
@@ -962,6 +967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.01032804
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157034590562138190, guid: d248d430ccded044da246b96a5f6758a,
+        type: 3}
+      propertyPath: m_PathPosition
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
