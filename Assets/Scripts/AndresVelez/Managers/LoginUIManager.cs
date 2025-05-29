@@ -25,11 +25,34 @@ public class LoginUIManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        Debug.Log("MMe desperte");
 
         // Inicializar Unity Services
         await UnityServices.InitializeAsync();
     }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Login")  // Cambia este nombre por el real de tu escena de login
+        {
+            usernameInput = GameObject.Find("UserName")?.GetComponent<TMP_InputField>();
+            passwordInput = GameObject.Find("Password")?.GetComponent<TMP_InputField>();
+            usernameDisplay = GameObject.Find("MessageUser")?.GetComponent<TextMeshProUGUI>();
+            errorText = GameObject.Find("ErrorMessage")?.GetComponent<TextMeshProUGUI>();
 
+            if (usernameInput == null) Debug.LogError("No encontró el InputField 'UserName'");
+            if (passwordInput == null) Debug.LogError("No encontró el InputField 'Password'");
+            if (usernameDisplay == null) Debug.LogError("No encontró el TextMeshProUGUI 'MessageUser'");
+            if (errorText == null) Debug.LogError("No encontró el TextMeshProUGUI 'ErrorMessage'");
+        }
+        else
+        {
+            usernameInput = null;
+            passwordInput = null;
+            usernameDisplay = null;
+            errorText = null;
+        }
+    }
     public async void OnLoginClicked()
     {
         string username = usernameInput.text;

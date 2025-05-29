@@ -1,10 +1,8 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Unity.Services.Core;
 using Unity.Services.Authentication;
 using System.Collections;
-using System.Threading.Tasks;
 
 public class SceneTransitioSimple : MonoBehaviour
 {
@@ -20,18 +18,24 @@ public class SceneTransitioSimple : MonoBehaviour
 
     private IEnumerator SignOutAndLoadScene()
     {
+        // Asegúrate de que Unity Services esté inicializado
         yield return EnsureUnityServicesInitialized();
 
+        // Cerrar sesión si está iniciada
         if (AuthenticationService.Instance.IsSignedIn)
         {
             AuthenticationService.Instance.SignOut();
             Debug.Log("Sesión cerrada correctamente.");
+
+            // Opcional: esperar un frame para asegurar que el cierre tenga efecto
+            yield return null;
         }
         else
         {
             Debug.LogWarning("No hay sesión iniciada para cerrar.");
         }
 
+        // Cargar la nueva escena
         SceneManager.LoadScene(nextSceneName);
     }
 
@@ -50,7 +54,7 @@ public class SceneTransitioSimple : MonoBehaviour
             }
         }
 
-        SceneManager.LoadScene(nextSceneName);
+        // No cargar la escena aquí, solo asegurarse de que los servicios están listos
+        yield return null;
     }
-
 }
