@@ -31,6 +31,18 @@ public class LoginUIManager : MonoBehaviour
         // Inicializar Unity Services
         await UnityServices.InitializeAsync();
     }
+
+    private void Update()
+    {
+        if (AuthenticationService.Instance.IsSignedIn)
+        {
+            Debug.Log("✅ Sesión activa");
+        }
+        else
+        {
+            Debug.Log("❌ Sesión NO iniciada");
+        }
+    }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Login")  // Cambia este nombre por el real de tu escena de login

@@ -604,6 +604,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194178801}
   m_CullTransparentMesh: 1
+--- !u!1 &235355509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709514191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258082990
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +693,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1550677681}
     m_Modifications:
+    - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1505214664}
+    - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4284878735646626050, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -813,10 +834,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1505214664}
   m_SourcePrefab: {fileID: 100100000, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
 --- !u!1 &444439352
 GameObject:
@@ -3138,30 +3164,32 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1709514191}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1317477154 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1709514191}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db083c65d918dec448b8f1e956f98a93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1317477156 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7594708593404346517, guid: c51682af09d1e5e40bb7f8294ba19f6a,
     type: 3}
   m_PrefabInstance: {fileID: 1709514191}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 235355509}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1317477157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235355509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78cd735af55a3543b09a7ef405e2106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Nivel Tatacoa
+  resumenFinal: {fileID: 0}
 --- !u!1 &1356653802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3420,20 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 441398678}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1505214664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505214662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78cd735af55a3543b09a7ef405e2106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Nivel amazonas
+  resumenFinal: {fileID: 0}
 --- !u!1 &1532989750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,16 +3885,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1317477154}
+      objectReference: {fileID: 1317477157}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CargarEscena
+      value: loadEscena
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneTransitioSimple, Assembly-CSharp
+      value: SceneChanger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -4148,13 +4190,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f91e62aa56167ed4d8d7c7429b95adec,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2366297407077948342, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     - {fileID: 2430779410968053930, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     - {fileID: 5401238378908518374, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6704028554249241806, guid: c51682af09d1e5e40bb7f8294ba19f6a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1317477157}
   m_SourcePrefab: {fileID: 100100000, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
 --- !u!1 &1757543297
 GameObject:
