@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3176839495290380683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0642636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0642636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0642636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.76513
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4398
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -47.60624
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99373436
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.11176767
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -12.834
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6918588243607923689, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0312d05d13cf0ca46b25eb265254b69e, type: 2}
+    - target: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      propertyPath: m_Name
+      value: ZorroCorriendo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7557330939272314958}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7390599637041717173}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2000348375629364793}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3990209736592252659}
+  m_SourcePrefab: {fileID: 100100000, guid: 02312a947fc5b4f4eb3492743c0684f2, type: 3}
+--- !u!1 &2366377041130675418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02312a947fc5b4f4eb3492743c0684f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3176839495290380683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7557330939272314958
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366377041130675418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca3d110de1d74ce48820f2dd6936c997, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7390599637041717173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366377041130675418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc232ba0ef8cf3e4ea04b962394d9d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  speed: 4
+  reachThreshold: 0.2
+  walkingStateName: Epica
+--- !u!65 &2000348375629364793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366377041130675418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.49821928, z: 1.4375852}
+  m_Center: {x: 0.000000004381201, y: 0.36931133, z: -0.14039062}
+--- !u!114 &3990209736592252659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2366377041130675418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59cf6477ba82884c928bf2fea58888b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseScore: 20
+  epicMultiplier: 2
+  nombreAnimal: 
+  animalAudioSource: {fileID: 0}
+  fotografiado: 0
+  epica: 0
+  animator: {fileID: 0}
