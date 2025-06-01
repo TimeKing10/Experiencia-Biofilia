@@ -53,6 +53,7 @@ public class TakePhotos : MonoBehaviour
         jugadorID = nextID;
         nextID++;
 
+
         var cargador = transform.Find("CargadorJugador1");
         if (cargador != null)
         {
@@ -60,6 +61,10 @@ public class TakePhotos : MonoBehaviour
         }
     }
 
+    public static void ResetID()
+    {
+        nextID = 1;
+    }
     void Start()
     {
         Referencias.Instance.AsignarValores(this);

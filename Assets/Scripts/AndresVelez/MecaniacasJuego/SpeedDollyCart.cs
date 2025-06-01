@@ -15,7 +15,7 @@ public class SpeedDollyCart : MonoBehaviour
         {
             dollyCart.m_Speed = newSpeed;
             animator.SetBool("EmpezarAnimacion", true);
+            
         }
     }
 }
-

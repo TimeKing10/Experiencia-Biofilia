@@ -52,6 +52,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-5506918666199413982
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: e180d3bc6961d9647bb9e238e324a6f0
+  m_EffectName: Attenuation
+  m_MixLevel: 43f88b37fc383e5429e54f35462c40d0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-3487461535445753696
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -151,6 +165,7 @@ AudioMixerController:
     - d1cf10ca69b989c40b68a13f7c852d4b
     - a1982987f48ce9844a55d385ef10374c
     - e1d898a8390da7347a2bf01cbaff63b6
+    - 525bc7615820ab449bd9221cfb28a30a
     name: View Master
   - guids:
     - 7175537f622be03428c60008eab35c45
@@ -161,7 +176,7 @@ AudioMixerController:
     - d1cf10ca69b989c40b68a13f7c852d4b
     - e4e26db0c21270d4cbee931dba109c96
     name: View Animales SFX
-  m_CurrentViewIndex: 0
+  m_CurrentViewIndex: 1
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:
@@ -178,6 +193,7 @@ AudioMixerGroupController:
   - {fileID: -7633113425690974600}
   - {fileID: 3653640366314677276}
   - {fileID: 1891196178833384025}
+  - {fileID: 8646017799919923841}
   m_Volume: 81ff030cf1cd31145aca57514267c6a9
   m_Pitch: c6c43fbf09e3ad44b9f771792755e84b
   m_Send: 00000000000000000000000000000000
@@ -212,8 +228,12 @@ AudioMixerSnapshotController:
   m_SnapshotID: b803408ce9c869240a77957b0e924951
   m_FloatValues:
     323e61713d0906d4cbbd9c01e335ac1d: -5.521288
-    4d6072d65da10d644a1e3e11f234185a: -13.928313
+    826c3b2262d70f946ae1ff4f103e54ad: -7.6641026
+    c9040ed223340814eb57f4fda84c50db: -1.1315297
+    dae35254338d1fb499767bf785f7c710: 6.7923813
+    4d6072d65da10d644a1e3e11f234185a: -17.29471
     d2ce1d1a6c29330458f0a3a6946df0a7: -20.268442
+    f48314bfbaec3f84ba3cdb16bf8a6642: 20
   m_TransitionOverrides: {}
 --- !u!244 &1869320735140741854
 AudioMixerEffectController:
@@ -235,7 +255,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ambiente
+  m_Name: Ambiente ciudad
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: d1cf10ca69b989c40b68a13f7c852d4b
   m_Children: []
@@ -352,6 +372,25 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 2724143840483630983}
   m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &8646017799919923841
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ambiente natuiraleza
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 525bc7615820ab449bd9221cfb28a30a
+  m_Children: []
+  m_Volume: 44c1408d896dcc8428aaf05a4a8bc4bf
+  m_Pitch: 65074c1ae582ea449929ed53f40fc69f
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -5506918666199413982}
+  m_UserColorIndex: 3
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0

@@ -13,8 +13,13 @@ public class SceneChanger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            EnviarDatosYCambiarEscena(); // ✅ Llamada directa
+            Resumen();// ✅ Llamada directa
         }
+    }
+
+    private void Update()
+    {
+        Debug.Log(sceneName);
     }
 
     public void changeScene()
@@ -22,19 +27,26 @@ public class SceneChanger : MonoBehaviour
         EnviarDatosYCambiarEscena(); // ✅ Llamada directa
     }
 
-    private async void EnviarDatosYCambiarEscena()
-    {
+    private void Resumen() {
         resumenFinal.MostrarResumen();
+    }
+
+    public async void EnviarDatosYCambiarEscena()
+    {
+        
         ScoreManager.Instance.currentScore = TakePhotos.totalScore;
         ScoreManager.Instance.currentLevel = SceneManager.GetActiveScene().name;
 
         int updatedHighScore = await ScoreManager.Instance.SaveAndLoadUpdatedHighScore();
 
         ScoreManager.Instance.SubmitTotalScoreToLeaderboard();
+        SceneManager.LoadScene(sceneName);
 
     }    
     public void loadEscena()
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene(sceneName);
     }
 
