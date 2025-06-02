@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Mapa.unity
     guid: 476236f624ef0e64da87ff91703dc6e7
   - enabled: 1
-    path: Assets/Scenes/Nivel amazonas.unity
-    guid: 56fbefc08dad0b642a820b267f5a6879
-  - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: e8f40765d727d8b4795501a7325766a0
   - enabled: 1
+    path: Assets/Scenes/Nivel amazonas.unity
+    guid: 56fbefc08dad0b642a820b267f5a6879
+  - enabled: 1
     path: Assets/Scenes/Nivel Tatacoa.unity
     guid: 199bf63762c736847861383566071f42
+  - enabled: 1
+    path: Assets/Scenes/Mapa Medellin.unity
+    guid: 8e307e0f83f58aa4e9cf34417375e271
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3703d7147d5176941a91e3da47b85a0a,
       type: 3}

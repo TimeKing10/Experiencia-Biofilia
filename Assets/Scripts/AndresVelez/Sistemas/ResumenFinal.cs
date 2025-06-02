@@ -67,6 +67,7 @@ public class ResumenFinal : MonoBehaviour
                 hudGameplay.SetActive(false);
             }
             panelFotos.SetActive(true);
+            
             panelFotos.transform.localScale = Vector3.zero;
 
             // Escalado inicial tipo pop del panel
@@ -79,17 +80,16 @@ public class ResumenFinal : MonoBehaviour
     private IEnumerator AnimarResumen()
     {
         foreach (var estrella in estrellas)
-{
+    {
     if (estrella != null)
     {
         estrella.gameObject.SetActive(true);
         estrella.transform.localScale = Vector3.zero;
-
-        yield return null; // 
-
         estrella.transform.DOScale(1f, 0.6f)
             .SetEase(Ease.OutBack);
+        yield return null; // 
 
+    
         audioSource?.PlayOneShot(popSound);
         yield return new WaitForSeconds(delayEntreEstrellas);
     
