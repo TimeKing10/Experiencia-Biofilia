@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     public float easeDuration = 0.5f;
     public float easeDelay = 0.5f;
 
+    public float liveTime = 10f;
+
     [Header("Input")]
     public InputAction anyButtonAction; // Referencia desde el InputActionAsset
 
@@ -25,6 +27,7 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            ShowInstructions("Presiona A para iniciar");
         }
         else
         {
@@ -53,7 +56,7 @@ public class UIManager : MonoBehaviour
         
     }
 
-    private IEnumerator EaseInOut(Transform target, float duration, float delay)
+    private IEnumerator EaseInOut(Transform target, float duration, float delay, float liveTime)
     {
         yield return new WaitForSeconds(delay);
         Vector3 originalScale = target.localScale;
@@ -63,7 +66,7 @@ public class UIManager : MonoBehaviour
         target.DOScale(originalScale, duration).SetEase(Ease.OutBack);
         yield return new WaitForSeconds(duration);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(liveTime);
         target.DOScale(Vector3.zero, duration).SetEase(Ease.InBack);
         yield return new WaitForSeconds(duration);
 
@@ -73,7 +76,7 @@ public class UIManager : MonoBehaviour
     public void ShowInstructions(string message)
     {
         instruccionOnscreen.SetActive(true);
-        StartCoroutine(EaseInOut(instruccionOnscreen.transform, easeDuration, easeDelay));
+        StartCoroutine(EaseInOut(instruccionOnscreen.transform, easeDuration, easeDelay, liveTime));
 
         anyButtonAction.Enable(); // Activa la escucha justo aquí si no está en OnEnable
     }

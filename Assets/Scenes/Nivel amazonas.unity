@@ -53399,7 +53399,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 6704028553306244493}
+      objectReference: {fileID: 376429937}
     - target: {fileID: 8105461167924792444, guid: 911aab0403c11c744b553ee7b7cb2d25,
         type: 3}
       propertyPath: m_Name
@@ -55012,6 +55012,7 @@ MonoBehaviour:
   instruccionOnscreen: {fileID: 6704028553306244493}
   easeDuration: 1
   easeDelay: 0.5
+  liveTime: 500
   anyButtonAction:
     m_Name: Any Button
     m_Type: 0

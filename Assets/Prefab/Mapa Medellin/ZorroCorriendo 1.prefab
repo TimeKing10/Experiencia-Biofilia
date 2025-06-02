@@ -1913,13 +1913,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59cf6477ba82884c928bf2fea58888b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseScore: 20
+  baseScore: 45
   epicMultiplier: 2
-  nombreAnimal: 
+  nombreAnimal: Zorro
   animalAudioSource: {fileID: 0}
   fotografiado: 0
   epica: 0
-  animator: {fileID: 0}
+  animator: {fileID: 2194070642407815624}
 --- !u!1 &8374573810562175525
 GameObject:
   m_ObjectHideFlags: 0
