@@ -2120,7 +2120,7 @@ MonoBehaviour:
   animalAudioSource: {fileID: 0}
   fotografiado: 0
   epica: 1
-  animator: {fileID: 1570805856}
+  animator: {fileID: 1388477884}
 --- !u!1 &589835922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2220,7 @@ MonoBehaviour:
   baseScore: 10
   epicMultiplier: 2
   nombreAnimal: 
-  animalAudioSource: {fileID: 0}
+  animalAudioSource: {fileID: 2128898808}
   fotografiado: 0
   epica: 0
   animator: {fileID: 0}
@@ -2845,7 +2845,7 @@ PrefabInstance:
         type: 3}
       propertyPath: animalAudioSource
       value: 
-      objectReference: {fileID: 1696152136}
+      objectReference: {fileID: 0}
     - target: {fileID: 6347424979600552096, guid: f18e984a08b722b48b132845bf0cee1e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3603,6 +3603,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883513809}
   m_CullTransparentMesh: 1
+--- !u!1 &902674480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8284977426016702205, guid: 2176e5e78c3e09f41b46289b9c102961,
+    type: 3}
+  m_PrefabInstance: {fileID: 9078410508477648408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941528255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3942,7 @@ MonoBehaviour:
   baseScore: 5
   epicMultiplier: 2
   nombreAnimal: 
-  animalAudioSource: {fileID: 836541278}
+  animalAudioSource: {fileID: 0}
   fotografiado: 0
   epica: 0
   animator: {fileID: 0}
@@ -4652,7 +4658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af6cd6a44aea7f4c84eb16376d3741d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notificationMessage: Con LT (gatillo derecho) puedes tomar fotos
+  notificationMessage: Con RT (gatillo derecho) puedes tomar fotos
   delayTimetoHide: 4
   yOffset: 100
   notificationPanel: {fileID: 702417035}
@@ -4820,12 +4826,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 639409920}
   m_SourcePrefab: {fileID: 100100000, guid: 393cc61291e2c5f478ea131a4ac267a1, type: 3}
---- !u!1 &1213729621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8284977426016702205, guid: 2176e5e78c3e09f41b46289b9c102961,
-    type: 3}
-  m_PrefabInstance: {fileID: 9078410508477648408}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1224934001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7086,12 +7086,12 @@ PrefabInstance:
     - target: {fileID: 3810569691971116584, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -356.7
+      value: -340
       objectReference: {fileID: 0}
     - target: {fileID: 3810569691971116584, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -71.5
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 4067556925856198291, guid: fb6d068293f44054eb757c6a241eb383,
         type: 3}
@@ -11089,7 +11089,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 1213729621}
+      objectReference: {fileID: 902674480}
     - target: {fileID: 3175068874631279435, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
       propertyPath: m_Name
@@ -11153,7 +11153,7 @@ PrefabInstance:
     - target: {fileID: 4004932508062153845, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
       propertyPath: delayEntreEstrellas
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4004932508062153845, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
@@ -11210,6 +11210,12 @@ PrefabInstance:
       propertyPath: m_text
       value: "Enciende la c\xE1mara"
       objectReference: {fileID: 0}
+    - target: {fileID: 4899402252984395936, guid: 2176e5e78c3e09f41b46289b9c102961,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0dd573fc2d3b54949a7e356519e96f15,
+        type: 3}
     - target: {fileID: 5968298516115372205, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11346,6 +11352,11 @@ PrefabInstance:
       propertyPath: misiones.Array.data[1].valorObjetivo
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7760592711224293836, guid: 2176e5e78c3e09f41b46289b9c102961,
+        type: 3}
+      propertyPath: misiones.Array.data[2].valorObjetivo
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7947081848256542912, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
       propertyPath: m_fontAsset
@@ -11401,7 +11412,7 @@ PrefabInstance:
     - target: {fileID: 8232674948896654501, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}
       propertyPath: rangoRaycast
-      value: 300
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 8284977426016702205, guid: 2176e5e78c3e09f41b46289b9c102961,
         type: 3}

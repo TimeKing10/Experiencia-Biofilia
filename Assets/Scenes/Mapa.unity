@@ -1015,17 +1015,17 @@ PrefabInstance:
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.67154855
+      value: 0.8283019
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.8109262
+      value: 0.90963256
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.96981126
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1045,17 +1045,17 @@ PrefabInstance:
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
-      value: 0.38431373
+      value: 0.57169807
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.g
-      value: 0.63529414
+      value: 0.75085706
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Colors.m_SelectedColor.r
-      value: 0.9843137
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2298198436197672838, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1105,12 +1105,12 @@ PrefabInstance:
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelTag
-      value: 
+      value: Bosque Premontano
       objectReference: {fileID: 0}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelName
-      value: Bosque Premontano
+      value: "Medell\xEDn"
       objectReference: {fileID: 0}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1120,40 +1120,44 @@ PrefabInstance:
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelDescription
-      value: "El bosque premontano te estar\xE1 esperando\n"
+      value: "En el susurro h\xFAmedo del bosque premontano, el zorro cangrejero
+        avanza entre arboles y ra\xEDces, con paso cauteloso y mirada alerta. Desde
+        lo alto, el \xE1guila crestuda real observa en silencio, soberana del dosel,
+        con su cresta erguida y alas tensas como la brisa antes de la tormenta. Aqu\xED,
+        entre neblina y sombra, cada encuentro es un instante que vale ser capturado."
       objectReference: {fileID: 0}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelImages.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+      objectReference: {fileID: 21300000, guid: 751670dd3443c2148ab9eaa9c196dbaa,
         type: 3}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelImages.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+      objectReference: {fileID: 21300000, guid: 81f4f0317b5eadf43a0394c2c8a0f28d,
         type: 3}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelImages.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+      objectReference: {fileID: 21300000, guid: 717d4e46edcd32443a687f9354e68f68,
         type: 3}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelObjectivesText.Array.data[0]
-      value: 
+      value: "Alcanzar 200 o m\xE1s puntos de expedici\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelObjectivesText.Array.data[1]
-      value: 
+      value: Tomar al menos 4 fotos buenas
       objectReference: {fileID: 0}
     - target: {fileID: 3444365266283347516, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: levelObjectivesText.Array.data[2]
-      value: 
+      value: "Tomar al menos 4 fotos \xE9picas"
       objectReference: {fileID: 0}
     - target: {fileID: 4284878735646626050, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1375,7 +1379,7 @@ PrefabInstance:
     - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: nextSceneName
-      value: Mapa
+      value: Mapa Medellin
       objectReference: {fileID: 0}
     - target: {fileID: 7156321111168222581, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1386,17 +1390,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bad1956bff9e9dc48866cf02482bc199,
+      objectReference: {fileID: 21300000, guid: 2e497d2a10a26ca4aaeb5f173b6c45fa,
         type: 3}
     - target: {fileID: 7594708593404346517, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.57169807
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7594708593404346517, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.93739885
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7594708593404346517, guid: c51682af09d1e5e40bb7f8294ba19f6a,
         type: 3}
@@ -1408,11 +1412,7 @@ PrefabInstance:
     - {fileID: 2366297407077948342, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     - {fileID: 2430779410968053930, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
     - {fileID: 5401238378908518374, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4284878735646626050, guid: c51682af09d1e5e40bb7f8294ba19f6a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 719991648}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51682af09d1e5e40bb7f8294ba19f6a, type: 3}
 --- !u!224 &483382069 stripped
@@ -1667,141 +1667,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &719991647
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 719991648}
-  - component: {fileID: 719991650}
-  - component: {fileID: 719991649}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &719991648
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719991647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 483382069}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 115}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &719991649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719991647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Pr\xF3ximamente"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 57e56a90b0bca1a4ca33af02501f631e, type: 2}
-  m_sharedMaterial: {fileID: 2812681332272953034, guid: 57e56a90b0bca1a4ca33af02501f631e,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4287168495
-  m_fontColor: {r: 0.9377093, g: 1, b: 0.53396225, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 25.7
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &719991650
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719991647}
-  m_CullTransparentMesh: 1
 --- !u!1 &898550336
 GameObject:
   m_ObjectHideFlags: 0
